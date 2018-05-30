@@ -23,7 +23,7 @@
             <thead>
             <tr class="row">
                 <th class="col-md-1">#Id</th>
-                <th class="col-md-2">Mã lớp</th>
+                <th class="col-md-1">Mã lớp</th>
                 <th class="col-md-2">Mã timeslot</th>
                 <th class="col-md-2">Mã môn học</th>
                 <th class="col-md-2">Ngày điểm danh</th>
@@ -34,7 +34,7 @@
             <tbody>
             <tr th:each="attendanceSlots : ${attendanceSlotsList}" class="row">
                 <td class="col-md-1" th:text="${attendanceSlots.id}"></td>
-                <td class="col-md-2 product-name" th:text="${attendanceSlots.classInfo.maLop}"></td>
+                <td class="col-md-1 product-name" th:text="${attendanceSlots.classInfo.maLop}"></td>
                 <td class="col-md-2 product-name" th:text="${attendanceSlots.timeslots.id}"></td>
                 <td class="col-md-2 product-name" th:text="${attendanceSlots.maMonHoc}"></td>
                 <td class="col-md-2 product-name" th:text="${attendanceSlots.ngayDiemDanh}"></td>
